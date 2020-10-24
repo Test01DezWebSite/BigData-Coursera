@@ -3,9 +3,7 @@ HDFS is strictly POSIX compliant.
 
 Following issues may be caused by lot of small files in HDFS
 -NameNode memory usage increases significantly
--Network load decreases
--Number of map tasks need to process the same amount of data will be larger.
-I/O rate will be faster
+- I/O rate will be faster
 
 
 10gb / 128megabyte ~ 80
@@ -13,7 +11,7 @@ I/O rate will be faster
 20GB
 
 What is the first step in a write process from a HDFS client?
--Immediately contact the NameNode
+-Cache data then contact NameNode
 
 
 HDFS NameNode is not rack aware when it places the replica blocks.
