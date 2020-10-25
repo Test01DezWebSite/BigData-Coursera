@@ -5,11 +5,11 @@ Q:Name the parameter that controls the replication factor in HDFS:
 A: dfs.replication
 
 Q:Check answers that apply when replication is lowered
-A: HDFS is less robust
+A: HDFS is less robust, with more space available
 
 
 Q:Check answers that apply when NameNode fails to receive heartbeat from a DataNode
-A:
+A: DataNode marked dead, no new I/O sent to it, blocks below replication factor are re-replicated on other DataNodes
 
 Q:How is data corruption mitigated in HDFS
-A:Data from all replicas is compared for correctness
+A:checksums computed and stored in HDFS namespace
